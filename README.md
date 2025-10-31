@@ -55,37 +55,30 @@ We built a **web-based application** that:
 
 ---
 
+### Prerequisites
+- Git
+- Python (3.11 or higher)
+- Astral uv (a fast Python package and project manager, written in Rust)
+
+
 ## 🧰 Installation
 
 ### 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/<your-username>/DeepFakeShield.git
-cd DeepFakeShield
+git clone https://github.com/Rkgoml/trustlens-30-10.git
+cd trustlens-30-10
 ```
 
-### 2️⃣ Create Virtual Environment
+### 2️⃣ Run the Application
 
 ```bash
-python -m venv venv
-source venv/bin/activate   # On Windows: venv\Scripts\activate
-```
-
-### 3️⃣ Install Dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-### 4️⃣ Run the Application
-
-```bash
-uvicorn app.main:app --reload
+uv run streamlit run main.py
 ```
 
 ### 5️⃣ Access the UI
 
-Open your browser at `http://localhost:8000` (or the Streamlit app if using Streamlit).
+Open your browser at `http://localhost:8501`.
 
 ---
 
@@ -97,39 +90,7 @@ Open your browser at `http://localhost:8000` (or the Streamlit app if using Stre
 ```
 Result: FAKE
 Confidence: 92.4%
-Visualization: Grad-CAM heatmap highlighting altered facial regions
 ```
-
----
-
-## 📁 Project Structure
-
-```
-DeepFakeShield/
-│
-├── app/
-│   ├── main.py                 # FastAPI backend
-│   ├── model_loader.py         # Model loading logic
-│   ├── inference.py            # Image/Video inference
-│   ├── utils.py                # Helper functions
-│
-├── frontend/                   # Streamlit or React frontend
-│
-├── models/                     # Pre-trained weights
-│
-├── data/                       # Sample inputs
-│
-├── requirements.txt
-└── README.md
-```
-
----
-
-## 🧪 Datasets Used
-
-* [FaceForensics++](https://github.com/ondyari/FaceForensics)
-* [DeepFake Detection Challenge Dataset (DFDC)](https://ai.facebook.com/datasets/dfdc)
-* [Celeb-DF v2](https://github.com/yuezunli/celeb-deepfakeforensics)
 
 ---
 
@@ -152,21 +113,8 @@ This solution empowers users, media agencies, and fact-checkers to:
 
 ---
 
-## 👥 Team Members
-
-| Name         | Role         | Responsibility                 |
-| ------------ | ------------ | ------------------------------ |
-| [Your Name]  | ML Engineer  | Model training & optimization  |
-| [Teammate 1] | Backend Dev  | API & inference service        |
-| [Teammate 2] | Frontend Dev | UI/UX & visualization          |
-| [Teammate 3] | Researcher   | Dataset preparation & analysis |
-
----
-
 ## 📜 License
 
 This project is licensed under the **MIT License** – see the [LICENSE](LICENSE) file for details.
 
----
 
-Would you like me to tailor this README specifically to your **Stack (e.g., FastAPI + Streamlit + PyTorch)** and the **model types you’re using (e.g., CNN, 3D CNN, or ViT)** so it looks more realistic for your submission?
