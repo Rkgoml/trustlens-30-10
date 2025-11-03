@@ -45,9 +45,14 @@ We built a **web-based application** that:
 
 ---
 
+## Model Links
+
+* [Image model](https://huggingface.co/dima806/deepfake_vs_real_image_detection)
+* [Video model](https://huggingface.co/faisalishfaq2005/deepfake-detection-efficientnet-vit)
+
 ## 🏗️ System Architecture
 
-![System Architecture](media/others/architecture.png)
+![System Architecture](assets/architecture.png)
 
 ## 💡 Key Features
 
@@ -62,10 +67,10 @@ We built a **web-based application** that:
 ### Prerequisites
 - Git
 - Python (3.11 or higher)
-- Astral uv (a fast Python package and project manager, written in Rust)
+- [Astral uv](https://docs.astral.sh/uv/getting-started/installation/) (a fast Python package and project manager, written in Rust)
 
 
-## 🧰 Installation
+## 🧰 Installation and setup
 
 ### 1️⃣ Clone the Repository
 
@@ -86,17 +91,41 @@ Open your browser at `http://localhost:8501`.
 
 ---
 
-## 📊 Example Output
+## 🧪 Example Usage
 
-**Input:** `fake_video.mp4`
-**Output:**
+### 1️⃣ Start the Streamlit Server
+Run the application locally using:
 
-```
-Result: FAKE
-Confidence: 92.4%
-```
+![](assets/terminal.png)
 
----
+### 2️⃣ Open the App in Your Browser
+
+Once the server starts, Streamlit will display a local URL in the terminal (something like):
+
+Local URL: http://localhost:8501
+
+Open that URL in your browser to access the app.
+![](assets/streamlit-url.png)
+
+### 3️⃣ Upload an Image or Video
+
+Select an image (.png / .jpg) or a video (.mp4) from your system and upload it using the Streamlit interface.
+
+![](assets/upload-media.png)
+
+### 4️⃣ Click the “Analyze” Button
+
+Once uploaded, click on the Analyze button to start the deepfake detection process.
+
+![](assets/analyze-media.png)
+
+### 5️⃣ View the Results
+
+After a short processing time, the prediction result and confidence score will be displayed on the screen. 
+
+![](assets/final-result.png)
+
+
 
 ## ⚡ Future Enhancements
 
