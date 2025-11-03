@@ -45,6 +45,10 @@ We built a **web-based application** that:
 
 ---
 
+## 🏗️ System Architecture
+
+![System Architecture](media/others/architecture.png)
+
 ## 💡 Key Features
 
 ✅ Detects fake content in both **images** and **videos**
